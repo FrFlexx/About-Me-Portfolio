@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>FLEXX - Портфолио разработчика</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%23667eea'>F</text></svg>">
+    <meta name="description" content="Портфолио Backend-разработчика FLEXX. Проекты, навыки и контакты.">
+    <meta name="keywords" content="FLEXX, Backend-разработчика, портфолио, JavaScript, HTML, CSS, Bootstrap, ИИшки, aiogram, Python, Telegram coding, TG-WEB3">
+    <meta property="og:title" content="FLEXX - Портфолио разработчика">
+    <meta property="og:description" content="Посмотрите мои проекты и свяжитесь со мной.">
+    <meta property="og:image" content="./img/first-site630x270@2x.jpg">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Custom styles -->
+    <link href="css/cover.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">FLEXX</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">О себе</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Проекты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <button id="theme-toggle" class="btn btn-outline-light ms-2">🌙</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero text-white text-center py-5" data-aos="fade-up">
+        <div id="particles-js" style="position: absolute; top: 0; left: 0; width: 100%; height: 50vh;"></div>
+        <div class="container">
+            <h1 class="display-4">Привет, я FLEXX</h1>
+            <span id="typed" class="lead"></span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-dark text-light" data-aos="fade-right">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <img src="./img/my-photo..gif" alt="Профессиональное фото разработчика FLEXX" class="img-fluid mb-3" style="border-radius: 15px;" loading="lazy">
+                </div>
+                <div class="col-md-8">
+                    <h2>О себе</h2>
+                    <p>Я веб-разработчик с опытом в создании адаптивных и современных Backend/Frontend-приложений. Мои основные навыки включают Python, JavaScript, HTML, CSS, Bootstrap и работу с Git.</p>
+                    <h3>Навыки</h3>
+                    <ul class="list-inline">
+                        <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-placement="top" title="Язык программирования для веб-разработки"><i class="fab fa-js fa-2x text-warning"></i><br>JavaScript</li>
+                        <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-placement="top" title="Разметка и стилизация веб-страниц"><i class="fab fa-html5 fa-2x text-orange"></i><br>HTML/CSS</li>
+                        <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-placement="top" title="Фреймворк для адаптивного дизайна"><i class="fab fa-bootstrap fa-2x text-primary"></i><br>Bootstrap</li>
+                        <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-placement="top" title="Система контроля версий"><i class="fab fa-git fa-2x text-dark"></i><br>Git</li>
+                        <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-placement="top" title="Искусственный интеллект и машинное обучение"><i class="fas fa-brain fa-2x text-info"></i><br>ИИшки</li>
+                        <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-placement="top" title="Библиотека для Telegram ботов на Python"><i class="fab fa-telegram fa-2x text-info"></i><br>aiogram</li>
+                        <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-placement="top" title="Язык программирования для backend и AI"><i class="fab fa-python fa-2x text-success"></i><br>Python</li>
+                        <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-placement="top" title="Разработка приложений для Telegram"><i class="fab fa-telegram fa-2x text-primary"></i><br>Telegram coding</li>
+                        <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-placement="top" title="Интеграция Telegram с веб-технологиями"><i class="fas fa-globe fa-2x text-secondary"></i><br>TG-WEB3</li>
+                    </ul>
+                    <h3>Контакты</h3>
+                    <p><a href="https://github.com/FrFlexx" target="_blank">GitHub</a> | <a href="https://x.com/FloridaFlexx" target="_blank">X</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-dark text-light" data-aos="fade-left">
+        <div class="container">
+            <h2 class="text-center mb-4">Проекты</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8 mb-4">
+                    <div class="card h-100">
+                        <img src="./img/first-site630x270@2x.jpg" class="card-img-top" alt="TechMarket проект" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">TechMarket</h5>
+                            <p class="card-text">Проект интернет-магазина на JavaScript. Включает адаптивный дизайн и функциональность.</p>
+                            <a href="https://github.com/FrFlexx/TechMarket" class="btn btn-primary" target="_blank">Посмотреть на GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Добавить больше проектов -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-dark text-light" data-aos="fade-up">
+        <div class="container">
+            <h2 class="text-center mb-4">Контакты</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Свяжитесь со мной</h3>
+                    <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Ваш email" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="4" placeholder="Сообщение"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Отправить</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <h3>Социальные сети</h3>
+                    <p><a href="https://github.com/FrFlexx" target="_blank"><i class="fab fa-github"></i> GitHub</a></p>
+                    <p><a href="https://x.com/FloridaFlexx" target="_blank"><i class="fab fa-x-twitter"></i> X</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="btn btn-primary" style="position: fixed; bottom: 20px; right: 20px; display: none; z-index: 1000;">↑</button>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2025 FLEXX. Все права защищены.</p>
+            <p><a href="#home">Наверх</a></p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <!-- Typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script src="js/site.js"></script>
+</body>
+</html>
