@@ -76,11 +76,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 text-center">
-                    <img src="./img/my-photo..gif" alt="Профессиональное фото разработчика FLEXX" class="img-fluid mb-3" style="border-radius: 15px;" loading="lazy">
+                    <img src="./img/my-photo..gif" alt="Профессиональное фото разработчика FLEXX" class="img-fluid mb-3" style="border-radius: 15px;" loading="lazy" sizes="(max-width: 768px) 100vw, 33vw">
                 </div>
                 <div class="col-md-8">
                     <h2>О себе</h2>
-                    <p>Я Backend-разработчик с опытом в создании адаптивных и современных Backend/Frontend-приложений. Мои основные навыки включают Python, JavaScript, HTML, CSS, Bootstrap и работу с Git.</p>
+                    <p>Я веб-разработчик с опытом в создании адаптивных и современных Backend/Frontend-приложений. Мои основные навыки включают Python, JavaScript, HTML, CSS, Bootstrap и работу с Git.</p>
                     <h3>Навыки</h3>
                     <ul class="list-inline">
                         <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-placement="top" title="Язык программирования для веб-разработки"><i class="fab fa-js fa-2x text-warning"></i><br>JavaScript</li>
@@ -107,7 +107,7 @@
             <div class="row justify-content-center">
                 <div class="col-md-8 mb-4">
                     <div class="card h-100">
-                        <img src="./img/first-site630x270@2x.jpg" class="card-img-top" alt="TechMarket проект" loading="lazy">
+                        <img src="./img/first-site630x270@2x.jpg" class="card-img-top" alt="TechMarket проект" loading="lazy" sizes="(max-width: 768px) 100vw, 50vw">
                         <div class="card-body">
                             <h5 class="card-title">TechMarket</h5>
                             <p class="card-text">Проект интернет-магазина на JavaScript. Включает адаптивный дизайн и функциональность.</p>
@@ -127,12 +127,12 @@
             <div class="row">
                 <div class="col-md-6">
                     <h3>Свяжитесь со мной</h3>
-                    <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+                    <form action="mailto:your-email@example.com?subject=Сообщение с сайта портфолио" method="post" enctype="text/plain">
                         <div class="mb-3">
-                            <input type="email" class="form-control" placeholder="Ваш email" required>
+                            <input type="email" name="email" class="form-control" placeholder="Ваш email" required>
                         </div>
                         <div class="mb-3">
-                            <textarea class="form-control" rows="4" placeholder="Сообщение"></textarea>
+                            <textarea name="message" class="form-control" rows="4" placeholder="Сообщение" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">Отправить</button>
                     </form>
