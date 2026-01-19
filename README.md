@@ -20,4 +20,4 @@ This is the personal portfolio website of FLEXX, a backend developer specializin
 
 ## License
 
-All rights reserved © 2025 FLEXX
+All rights reserved © 2026 FLEXX
